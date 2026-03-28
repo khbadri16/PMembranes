@@ -8,8 +8,11 @@ core ideas :
 Core model
 -------------------------
 • Membranes form a rooted tree (no cycles, no DAG: each membrane has at most one parent). 
+
 • Each membrane holds a multiset-like bag of objects (Python list; order ignored for matching). 
+
 • Objects are **owned** by exactly one membrane at a time (tracked via PObject._membrane). 
+
 • Rules act on objects and can :
 
     - STAY (possibly after mutating the object)
